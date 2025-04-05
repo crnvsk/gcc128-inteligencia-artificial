@@ -86,6 +86,9 @@ def main_algorithm(k_input):
     print(f"Precisão: {precision:.2f}")
     print(f"Revocação: {recall:.2f}")
 
+    # Retorna as métricas
+    return accuracy, precision, recall
+
 # Executa o algoritmo principal com k=3 (ou outro valor desejado)
 if __name__ == "__main__":
     main_algorithm(k_input=3)
