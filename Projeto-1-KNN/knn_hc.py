@@ -36,8 +36,59 @@ def classify_species(train_df, nearest_neighbors_list):
         species_list.append(most_common_species)
     return species_list
 
-# ------ Código Principal ------ #
+# Avalia o algoritmo para múltiplos valores de k
+def evaluate_multiple_k_values(k_values):
+    # Carrega o dataset
+    df = pd.read_csv("iris.csv")
 
+    # Embaralha o dataset com seed fixa
+    SEED = 123
+    np.random.seed(SEED)
+    df_shuffled = df.sample(frac=1, random_state=SEED).reset_index(drop=True)
+
+    # Divide em treino e teste (80/20)
+    df_train = df_shuffled[0:120].copy()
+    df_test = df_shuffled[120:].copy()
+
+    results = []
+
+    for k in k_values:
+        print(f"Calculando para k={k}...")
+        # Encontra os vizinhos mais próximos
+        nearest_neighbors_list = []
+        for _, test_row in df_test.iterrows():
+            neighbors = k_nearest_neighbors(df_train, test_row, k)
+            nearest_neighbors_list.append(neighbors)
+
+        # Prediz a espécie dos testes
+        species_predictions = classify_species(df_train, nearest_neighbors_list)
+
+        # Adiciona as previsões ao dataframe de teste
+        df_test['PredictedSpecies'] = species_predictions
+
+        # Calcula métricas de avaliação
+        accuracy = accuracy_score(df_test['Species'], df_test['PredictedSpecies'])
+        precision = precision_score(df_test['Species'], df_test['PredictedSpecies'], average='weighted')
+        recall = recall_score(df_test['Species'], df_test['PredictedSpecies'], average='weighted')
+
+        # Armazena os resultados
+        results.append({
+            'k': k,
+            'accuracy': accuracy,
+            'precision': precision,
+            'recall': recall
+        })
+
+        print(f"k={k} -> Acurácia: {accuracy:.2f}, Precisão: {precision:.2f}, Revocação: {recall:.2f}")
+
+    # Exibe os resultados finais
+    print("\nResultados finais:")
+    for result in results:
+        print(f"k={result['k']} -> Acurácia: {result['accuracy']:.2f}, Precisão: {result['precision']:.2f}, Revocação: {result['recall']:.2f}")
+
+    return results
+
+# Executa o algoritmo principal para um único valor de k
 def main_algorithm(k_input):
     # Carrega o dataset
     df = pd.read_csv("iris.csv")
@@ -89,6 +140,13 @@ def main_algorithm(k_input):
     # Retorna as métricas
     return accuracy, precision, recall
 
-# Executa o algoritmo principal com k=3 (ou outro valor desejado)
+# ------ Código Principal ------ #
+
 if __name__ == "__main__":
+    # Testa múltiplos valores de k
+    k_values = [1, 3, 5, 7]
+    evaluate_multiple_k_values(k_values)
+
+    # Executa o algoritmo principal para k=3
+    print("\nExecutando o algoritmo principal para k=3...")
     main_algorithm(k_input=3)

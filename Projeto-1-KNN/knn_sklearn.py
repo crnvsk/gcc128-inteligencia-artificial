@@ -26,21 +26,43 @@ def sklearn_knn_classifier(k):
     cm = confusion_matrix(y_test, y_pred, labels=df['Species'].unique())
     plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=df['Species'].unique(), yticklabels=df['Species'].unique())
-    plt.title("Matriz de Confusão (Sklearn)")
+    plt.title(f"Matriz de Confusão (Sklearn, k={k})")
     plt.xlabel("Previsão")
     plt.ylabel("Verdadeiro")
-    plt.savefig("confusion_matrix_sklearn.png")
-    print("Arquivo confusion_matrix_sklearn.png gerado com sucesso!")
+    plt.savefig(f"confusion_matrix_sklearn_k{k}.png")
+    print(f"Arquivo confusion_matrix_sklearn_k{k}.png gerado com sucesso!")
 
     # Calcula métricas de avaliação
     accuracy = accuracy_score(y_test, y_pred)
     precision = precision_score(y_test, y_pred, average='weighted')
     recall = recall_score(y_test, y_pred, average='weighted')
-    print(f"Acurácia (Sklearn): {accuracy:.2f}")
-    print(f"Precisão (Sklearn): {precision:.2f}")
-    print(f"Revocação (Sklearn): {recall:.2f}")
+    print(f"Acurácia (Sklearn, k={k}): {accuracy:.2f}")
+    print(f"Precisão (Sklearn, k={k}): {precision:.2f}")
+    print(f"Revocação (Sklearn, k={k}): {recall:.2f}")
 
     return accuracy, precision, recall, sklearn_time
 
+def evaluate_multiple_k_values_sklearn(k_values):
+    results = []
+    for k in k_values:
+        print(f"\nExecutando o classificador Sklearn para k={k}...")
+        accuracy, precision, recall, sklearn_time = sklearn_knn_classifier(k)
+        results.append({
+            'k': k,
+            'accuracy': accuracy,
+            'precision': precision,
+            'recall': recall,
+            'time': sklearn_time
+        })
+
+    # Exibe os resultados finais
+    print("\nResultados finais (Sklearn):")
+    for result in results:
+        print(f"k={result['k']} -> Acurácia: {result['accuracy']:.2f}, Precisão: {result['precision']:.2f}, Revocação: {result['recall']:.2f}, Tempo: {result['time']:.4f}s")
+
+    return results
+
 if __name__ == "__main__":
-    sklearn_knn_classifier(k=3)
+    # Testa múltiplos valores de k
+    k_values = [1, 3, 5, 7]
+    evaluate_multiple_k_values_sklearn(k_values)
