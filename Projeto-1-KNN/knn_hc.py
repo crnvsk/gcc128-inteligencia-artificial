@@ -146,7 +146,3 @@ if __name__ == "__main__":
     # Testa múltiplos valores de k
     k_values = [1, 3, 5, 7]
     evaluate_multiple_k_values(k_values)
-
-    # Executa o algoritmo principal para k=3
-    print("\nExecutando o algoritmo principal para k=3...")
-    main_algorithm(k_input=3)
