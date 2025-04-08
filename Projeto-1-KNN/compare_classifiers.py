@@ -1,6 +1,6 @@
 import time
-from knn_hc import evaluate_multiple_k_values
-from knn_sklearn import evaluate_multiple_k_values_sklearn
+from hardcore.knn_hc import evaluate_multiple_k_values
+from sk.knn_sklearn import evaluate_multiple_k_values_sklearn
 
 def compare_classifiers():
     # Valores de k para testar

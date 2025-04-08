@@ -175,3 +175,6 @@ cython_debug/
 
 # Ignore PNG images
 *.png
+
+# Ignore TXT files
+*.txt
