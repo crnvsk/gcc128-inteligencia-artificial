@@ -2,6 +2,8 @@ import time
 from hardcore.knn_hc import evaluate_multiple_k_values
 from sk.knn_sklearn import evaluate_multiple_k_values_sklearn
 
+# ------ Funções ------ #
+
 def compare_classifiers():
     # Valores de k para testar
     k_values = [1, 3, 5, 7]
@@ -29,6 +31,8 @@ def compare_classifiers():
         print(f"\nk={k}:")
         print(f"  Hardcore -> Acurácia: {hc_results[i]['accuracy']:.2f}, Precisão: {hc_results[i]['precision']:.2f}, Revocação: {hc_results[i]['recall']:.2f}")
         print(f"  Sklearn  -> Acurácia: {sklearn_results[i]['accuracy']:.2f}, Precisão: {sklearn_results[i]['precision']:.2f}, Revocação: {sklearn_results[i]['recall']:.2f}")
+
+# ------ Código Principal ------ #
 
 if __name__ == "__main__":
     compare_classifiers()

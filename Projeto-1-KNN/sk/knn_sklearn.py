@@ -11,6 +11,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 iris_csv_path = os.path.join(BASE_DIR, "../iris.csv")
 
+# ------ Funções ------ #
+
 def sklearn_knn_classifier(k):
     # Carrega o dataset
     df = pd.read_csv(iris_csv_path)
@@ -66,6 +68,8 @@ def evaluate_multiple_k_values_sklearn(k_values):
         print(f"k={result['k']} -> Acurácia: {result['accuracy']:.2f}, Precisão: {result['precision']:.2f}, Revocação: {result['recall']:.2f}, Tempo: {result['time']:.4f}s")
 
     return results
+
+# ------ Código Principal ------ #
 
 if __name__ == "__main__":
     # Testa múltiplos valores de k
