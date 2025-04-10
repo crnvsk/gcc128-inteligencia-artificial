@@ -94,3 +94,12 @@ Cada amostra possui 4 características:
 - Largura da sépala (`SepalWidthCm`)
 - Comprimento da pétala (`PetalLengthCm`)
 - Largura da pétala (`PetalWidthCm`)
+
+
+## 🔗 Link para o vídeo de explicação
+
+[https://youtu.be/DJlX1Qtlrok](https://youtu.be/DJlX1Qtlrok)
+
+---
+
+Projeto desenvolvido por João Pedro Alves Carneiro Valadão e Michel Alexandrino de Souza para a disciplina Inteligência Artificial, realizada na Universidade Federal de Lavras.
