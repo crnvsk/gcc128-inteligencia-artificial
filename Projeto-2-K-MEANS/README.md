@@ -112,7 +112,7 @@ Cada amostra possui 4 características:
 
 ## 🔗 Link para o vídeo de explicação
 
-[https://youtu.be/DJlX1Qtlrok](https://youtu.be/DJlX1Qtlrok)
+[https://youtu.be/B_ucFXOh9l4](https://youtu.be/B_ucFXOh9l4)
 
 ---
 
