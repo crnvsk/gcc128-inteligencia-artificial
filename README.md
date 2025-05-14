@@ -20,6 +20,12 @@ O repositório contém os seguintes projetos:
 - Avaliação da qualidade dos clusters com o **Silhouette Score** e visualização com PCA.
 - [Leia mais sobre o Projeto 2](./Projeto-2-K-MEANS/README.md)
 
+### **3. Projeto 3 - Perceptron (MLPClassifier)**
+- Implementação dos algoritmos de classificação K-Nearest Neighbors (KNN) e Multi-Layer Perceptron (MLP).
+- Comparação entre uma implementação manual do KNN e a implementação do MLP utilizando a biblioteca `scikit-learn`.
+- Avaliação de desempenho dos classificadores em diferentes conjuntos de dados (Iris e Wine), com métricas como acurácia, precisão, revocação e matriz de confusão.
+- [Leia mais sobre o Projeto 3](./Projeto-3-Perceptron/README.md)
+
 ---
 
 ## **Objetivo**
@@ -45,6 +51,8 @@ O objetivo deste repositório é consolidar o aprendizado prático da disciplina
    cd Projeto-1-KNN
    # ou
    cd Projeto-2-K-MEANS
+   # ou
+   cd Projeto-3-Perceptron
    ```
 
 3. Siga as instruções no arquivo `README.md` de cada projeto para executar o código.
