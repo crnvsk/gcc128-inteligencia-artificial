@@ -1,11 +1,11 @@
+import os
 import pandas as pd
 from sklearn.datasets import load_iris, load_wine
 from sklearn.preprocessing import StandardScaler
 from knn import run_knn
 from mlp import run_mlp
 from metrics import calculate_metrics, confusion_matrix
-import numpy as np
-import os
+
 
 def write_classification_file(filepath, results):
     """
@@ -68,19 +68,18 @@ if __name__ == "__main__":
     X_wine_scaled = scaler_wine.fit_transform(X_wine)
     idx_wine_mlp, y_test_wine_mlp, y_pred_wine_mlp, _ = run_mlp(X_wine_scaled, y_wine, hidden_layer_sizes=(100,), max_iter=500, dataset_name="Wine")
 
-    # Garante que o diretório 'results' existe antes de salvar os arquivos
-    os.makedirs("results", exist_ok=True)
+    project_dir = os.path.dirname(__file__)
 
-    # Salva classificações Iris em um único arquivo
+    # Salva classificações Iris em um único arquivo na pasta do projeto
     iris_results = [
         ("KNN", idx_iris_knn, y_test_iris_knn, y_pred_iris_knn, iris_target_names),
         ("MLP", idx_iris_mlp, y_test_iris_mlp, y_pred_iris_mlp, iris_target_names)
     ]
-    write_classification_file("results/classificacao_iris.txt", iris_results)
+    write_classification_file(os.path.join(project_dir, "classificacao_iris.txt"), iris_results)
 
-    # Salva classificações Wine em um único arquivo
+    # Salva classificações Wine em um único arquivo na pasta do projeto
     wine_results = [
         ("KNN", idx_wine_knn, y_test_wine_knn, y_pred_wine_knn, wine_target_names),
         ("MLP", idx_wine_mlp, y_test_wine_mlp, y_pred_wine_mlp, wine_target_names)
     ]
-    write_classification_file("results/classificacao_wine.txt", wine_results)
+    write_classification_file(os.path.join(project_dir, "classificacao_wine.txt"), wine_results)

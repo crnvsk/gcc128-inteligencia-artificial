@@ -1,6 +1,6 @@
-from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score
 
 def calculate_metrics(y_true, y_pred):
     """
