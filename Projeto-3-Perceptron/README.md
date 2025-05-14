@@ -121,7 +121,7 @@ Revocação: 1.00
 
 ## 🔗 Link para o vídeo de explicação
 
-
+[https://youtu.be/R8wd_EnAtjY](https://youtu.be/R8wd_EnAtjY)
 
 ---
 
