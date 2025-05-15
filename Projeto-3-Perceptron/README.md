@@ -1,4 +1,4 @@
-# Projeto 3 - KNN e MLP Classificadores
+# Projeto 3 - Perceptron (MLPClassifier)
 
 Este projeto implementa dois algoritmos de classificação: **K-Nearest Neighbors (KNN)** e **Multi-Layer Perceptron (MLP)**. O objetivo é comparar as implementações manuais e baseadas em bibliotecas, avaliando o desempenho em dois datasets clássicos: **Iris** e **Wine**.
 
@@ -8,6 +8,9 @@ Este projeto implementa dois algoritmos de classificação: **K-Nearest Neighbor
 - **`mlp.py`**: Implementação do classificador MLP utilizando a biblioteca `scikit-learn`.
 - **`metrics.py`**: Funções para cálculo de métricas (acurácia, precisão, revocação) e geração de matrizes de confusão.
 - **`main.py`**: Arquivo principal que executa os classificadores KNN e MLP nos datasets Iris e Wine.
+- **Arquivos de saída `.txt`**: Após a execução, os resultados completos (métricas, matrizes de confusão e classificações) são salvos nos arquivos:
+  - `classificacao_iris.txt`
+  - `classificacao_wine.txt`
 
 ## Funcionalidades
 
@@ -65,32 +68,43 @@ pip install numpy pandas scikit-learn matplotlib seaborn
 
 ## Resultados
 
-Os resultados incluem:
-- **Métricas de Avaliação**:
-Acurácia, precisão e revocação para os classificadores KNN e MLP.
-- **Matriz de Confusão**:
-Compara as previsões com os rótulos reais para análise detalhada.
+Todos os resultados (métricas de avaliação, matrizes de confusão e classificações) são salvos nos arquivos `.txt` gerados após a execução do projeto.
 
-### Exemplo de Saída no Console
+### Exemplo de Saída
 ```plaintext
-=== Executando KNN no Dataset Iris ===
-Iris - KNN (k=3)
-Acurácia: 0.97
-Precisão: 0.97
-Revocação: 0.97
+Os arquivos `classificacao_iris.txt` e `classificacao_wine.txt` apresentam, para cada classificador (KNN e MLP):
 
-=== Executando MLP no Dataset Iris ===
-Iris - MLP (hidden_layer_sizes=(100,), max_iter=500)
-Acurácia: 1.00
-Precisão: 1.00
-Revocação: 1.00
+- Tabela de classificação (rótulo real x rótulo previsto)
+- Métricas: acurácia, precisão e revocação
+- Matriz de confusão
+
+Exemplo de trecho do arquivo `classificacao_iris.txt`:
+```plaintext
+###--- KNN ---###
+
+ Id     Species           Predicted_Species
+  0  setosa           setosa
+  1  virginica        virginica
+  ...
+
+--------------------------------------------------
+
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+
+--------------------------------------------------
+
+                    setosa            versicolor        virginica         
+setosa              10                0                 0                 
+versicolor          0                 10                0                 
+virginica           0                 0                 10
 ```
 
-### Gráficos Gerados
-1. **Matriz de Confusão**:
-    - Mostra como as previsões se relacionam com os rótulos reais.
-2. **Visualização de Métricas**:
-    - Exibe as métricas de desempenho diretamente no console.
+### Visualização dos Resultados
+
+- Não são gerados gráficos automaticamente.
+- Toda a análise (métricas e matrizes de confusão) está disponível nos arquivos `.txt` para consulta detalhada.
 
 ## Conjuntos de Dados
 
