@@ -79,7 +79,6 @@ Os arquivos `classificacao_iris.txt` e `classificacao_wine.txt` apresentam, para
 - Matriz de confusão
 
 Exemplo de trecho do arquivo `classificacao_iris.txt`:
-```plaintext
 ###--- KNN ---###
 
  Id     Species           Predicted_Species
