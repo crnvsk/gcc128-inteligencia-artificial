@@ -7,7 +7,6 @@ Este projeto implementa o clássico **Jogo dos Oito (8-Puzzle)**, resolvido por 
 - **`eight_puzzle.py`**: Implementa a lógica do tabuleiro, movimentos e verificação do objetivo.
 - **`search.py`**: Implementa os algoritmos de busca BFS e A\*.
 - **`main.py`**: Interface gráfica com o usuário, integração dos algoritmos e interação manual.
-- **Arquivos auxiliares**: (README, etc.)
 
 ## Funcionalidades
 
