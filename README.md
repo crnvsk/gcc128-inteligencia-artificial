@@ -26,6 +26,13 @@ O repositório contém os seguintes projetos:
 - Avaliação de desempenho dos classificadores em diferentes conjuntos de dados (Iris e Wine), com métricas como acurácia, precisão, revocação e matriz de confusão.
 - [Leia mais sobre o Projeto 3](./Projeto-3-Perceptron/README.md)
 
+### **4. Projeto 4 - Jogo dos Oito (8-Puzzle)**
+- Implementação do clássico Jogo dos Oito (8-Puzzle) com interface gráfica interativa.
+- Permite ao usuário jogar manualmente ou solicitar a solução automática utilizando os algoritmos de Busca em Largura (BFS) e Busca A*.
+- Animação dos movimentos da solução encontrada, destacando o funcionamento dos algoritmos de busca.
+- Não requer bibliotecas externas além da biblioteca padrão do Python.
+- [Leia mais sobre o Projeto 4](./Projeto-4-Jogo-dos-Oito/README.md)
+
 ---
 
 ## **Objetivo**
@@ -35,6 +42,7 @@ O objetivo deste repositório é consolidar o aprendizado prático da disciplina
 - **Agrupamento**: Descoberta de grupos em dados não rotulados.
 - **Avaliação de Modelos**: Uso de métricas como matriz de confusão e Silhouette Score.
 - **Visualização**: Representação gráfica dos resultados para melhor interpretação.
+- **Busca e Resolução de Problemas**: Aplicação de algoritmos clássicos de busca para resolver o Jogo dos Oito, ilustrando conceitos de busca em espaços de estados e solução automática de problemas.
 
 ---
 
@@ -53,6 +61,8 @@ O objetivo deste repositório é consolidar o aprendizado prático da disciplina
    cd Projeto-2-K-MEANS
    # ou
    cd Projeto-3-Perceptron
+   # ou
+   cd Projeto-4-Jogo-dos-Oito
    ```
 
 3. Siga as instruções no arquivo `README.md` de cada projeto para executar o código.
