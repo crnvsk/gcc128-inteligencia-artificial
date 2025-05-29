@@ -1,4 +1,4 @@
-# Projeto 4 - Jogo dos Oito (8-Puzzle) com Inteligência Artificial
+# Projeto 4 - Jogo dos Oito (8-Puzzle)
 
 Este projeto implementa o clássico **Jogo dos Oito (8-Puzzle)**, resolvido por dois algoritmos de busca: **Busca em Largura (BFS)** e **Busca A\***. O objetivo é demonstrar técnicas de busca cega e informada aplicadas a um problema clássico de IA, com uma interface gráfica interativa.
 
@@ -66,7 +66,7 @@ Não são necessárias bibliotecas externas além da biblioteca padrão.
 
 ## 🔗 Link para o vídeo de explicação
 
-[]()
+[https://youtu.be/1iYB6JG-0Nk](https://youtu.be/1iYB6JG-0Nk)
 
 ---
 
