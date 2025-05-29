@@ -1,4 +1,5 @@
 import copy
+import random
 
 GOAL_STATE = [
     [1, 2, 3],
@@ -53,3 +54,11 @@ class EightPuzzle:
 
     def __hash__(self):
         return hash(str(self.state))
+
+def generate_random_state(moves=50):
+        puzzle = EightPuzzle([row[:] for row in GOAL_STATE])
+        for _ in range(moves):
+            possiveis = puzzle.possible_moves()
+            move = random.choice(possiveis)
+            puzzle = puzzle.move(move)
+        return puzzle.state

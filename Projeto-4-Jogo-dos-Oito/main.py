@@ -1,13 +1,9 @@
 import tkinter as tk
 from tkinter import messagebox
-from eight_puzzle import EightPuzzle, GOAL_STATE
+from eight_puzzle import EightPuzzle, GOAL_STATE, generate_random_state
 from search import bfs, astar
 
-INITIAL_STATE = [
-    [2, 7, 3],
-    [1, 0, 4],
-    [6, 8, 5]
-]
+INITIAL_STATE = generate_random_state()
 
 class PuzzleGUI:
     def __init__(self, master):
