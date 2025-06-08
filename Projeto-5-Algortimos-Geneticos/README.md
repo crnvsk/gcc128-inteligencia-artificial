@@ -68,6 +68,10 @@ Melhor solução encontrada: x = -9, Fitness = 112
 - O algoritmo pode ser expandido para outras funções ou intervalos, bastando adaptar a função de fitness e o mapeamento binário.
 - O método de seleção por torneio garante diversidade e pressão seletiva adequada mesmo em populações pequenas.
 
+## 🔗 Link para o vídeo de explicação
+
+[]()
+
 ---
 
 Projeto desenvolvido por João Pedro Alves Carneiro Valadão e Michel Alexandrino de Souza para a disciplina Inteligência Artificial, Universidade Federal de Lavras.
