@@ -56,10 +56,13 @@ Este projeto implementa um **Algoritmo Genético (AG)** para encontrar o valor m
 ## Exemplo de Saída
 
 ```
-Geração 1: Melhor x = -9, Fitness = 112
-Geração 2: Melhor x = -9, Fitness = 112
+Geração 1: Melhor x = -9, Fitness = 112, Melhor Indivíduo = [0, 0, 1, 1, 0]
+Geração 2: Melhor x = -9, Fitness = 112, Melhor Indivíduo = [0, 0, 0, 0, 1]
+Geração 3: Melhor x = -9, Fitness = 112, Melhor Indivíduo = [0, 0, 0, 0, 1]
+Geração 4: Melhor x = -9, Fitness = 112, Melhor Indivíduo = [0, 0, 0, 0, 1]
+Geração 5: Melhor x = -9, Fitness = 112, Melhor Indivíduo = [0, 0, 0, 0, 1]
 ...
-Melhor solução encontrada: x = -9, Fitness = 112
+Melhor solução encontrada: x = -9, Fitness = 112, Melhor Indivíduo = [0, 0, 0, 0, 1]
 ```
 
 ## Observações
