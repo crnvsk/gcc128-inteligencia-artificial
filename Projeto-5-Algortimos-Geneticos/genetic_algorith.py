@@ -63,12 +63,12 @@ def genetic_algorithm():
         population = new_population[:POP_SIZE]
 
         best_idx = fitnesses.index(max(fitnesses))
-        print(f"Geração {generation+1}: Melhor x = {decoded[best_idx]}, Fitness = {fitnesses[best_idx]}")
+        print(f"Geração {generation+1}: Melhor x = {decoded[best_idx]}, Fitness = {fitnesses[best_idx]}, Melhor Indivíduo = {population[best_idx]}")
 
     decoded = [decode(ind) for ind in population]
     fitnesses = [fitness(x) for x in decoded]
     best_idx = fitnesses.index(max(fitnesses))
-    print(f"\nMelhor solução encontrada: x = {decoded[best_idx]}, Fitness = {fitnesses[best_idx]}")
+    print(f"\nMelhor solução encontrada: x = {decoded[best_idx]}, Fitness = {fitnesses[best_idx]}, Melhor Indivíduo = {population[best_idx]}")
 
 if __name__ == "__main__":
     genetic_algorithm()
