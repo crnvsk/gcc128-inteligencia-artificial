@@ -4,7 +4,7 @@ Este projeto implementa um **Algoritmo Genético (AG)** para encontrar o valor m
 
 ## Estrutura do Projeto
 
-- **`genetic_algorith.py`**: Implementa toda a lógica do algoritmo genético, incluindo codificação, avaliação, seleção, crossover, mutação e execução das gerações.
+- **`genetic_algorithm.py`**: Implementa toda a lógica do algoritmo genético, incluindo codificação, avaliação, seleção, crossover, mutação e execução das gerações.
 
 ## Funcionalidades
 
@@ -48,10 +48,11 @@ Este projeto implementa um **Algoritmo Genético (AG)** para encontrar o valor m
 
 1. Clone o repositório ou copie o arquivo para sua máquina.
 2. Execute o arquivo principal:
+
    ```bash
-   python genetic_algorith.py
+   python genetic_algorithm.py
    ```
-3. Para testar diferentes configurações, altere os parâmetros no início do arquivo `genetic_algorith.py`.
+3. Para testar diferentes configurações, altere os parâmetros no início do arquivo `genetic_algorithm.py`.
 
 ## Exemplo de Saída
 
@@ -73,7 +74,7 @@ Melhor solução encontrada: x = -9, Fitness = 112, Melhor Indivíduo = [0, 0, 0
 
 ## 🔗 Link para o vídeo de explicação
 
-[]()
+[https://youtu.be/dnhzGIomrjI](https://youtu.be/dnhzGIomrjI)
 
 ---
 
