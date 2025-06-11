@@ -1,6 +1,6 @@
 # Repositório de Projetos - GCC128: Inteligência Artificial
 
-Este repositório foi criado para armazenar os projetos desenvolvidos na disciplina **GCC128 - Inteligência Artificial**, oferecida pela **Universidade Federal de Lavras (UFLA)**. A disciplina aborda conceitos fundamentais de inteligência artificial, com foco em algoritmos de aprendizado de máquina, agrupamento, classificação e outras técnicas relacionadas.
+Este repositório foi criado para armazenar os projetos desenvolvidos na disciplina **GCC128 - Inteligência Artificial**, oferecida pela **Universidade Federal de Lavras (UFLA)**. A disciplina aborda conceitos fundamentais de Inteligência Artificial, com foco em algoritmos de aprendizado de máquina, agrupamento, classificação, busca em espaços de estados, otimização com algoritmos evolutivos e outras técnicas relacionadas.
 
 ---
 
@@ -33,6 +33,14 @@ O repositório contém os seguintes projetos:
 - Não requer bibliotecas externas além da biblioteca padrão do Python.
 - [Leia mais sobre o Projeto 4](./Projeto-4-Jogo-dos-Oito/README.md)
 
+### **5. Projeto 5 - Algoritmos Genéticos**
+- Implementação de um Algoritmo Genético (AG) para otimização da função f(x) = x² − 3x + 4 no intervalo X = [−10, +10].
+- Codificação binária dos indivíduos, seleção por torneio, crossover de um ponto e mutação.
+- Parâmetros ajustáveis: tamanho da população, número de gerações, taxa de crossover e taxa de mutação.
+- Exibe o melhor indivíduo de cada geração e o melhor resultado final.
+- Não requer bibliotecas externas além da biblioteca padrão do Python.
+- [Leia mais sobre o Projeto 5](./Projeto-5-Algoritmos-Geneticos/README.md)
+
 ---
 
 ## **Objetivo**
@@ -43,6 +51,7 @@ O objetivo deste repositório é consolidar o aprendizado prático da disciplina
 - **Avaliação de Modelos**: Uso de métricas como matriz de confusão e Silhouette Score.
 - **Visualização**: Representação gráfica dos resultados para melhor interpretação.
 - **Busca e Resolução de Problemas**: Aplicação de algoritmos clássicos de busca para resolver o Jogo dos Oito, ilustrando conceitos de busca em espaços de estados e solução automática de problemas.
+- **Otimização com Algoritmos Evolutivos**: Utilização de Algoritmos Genéticos para resolver problemas de otimização, demonstrando conceitos de seleção, crossover, mutação e análise de desempenho ao longo das gerações.
 
 ---
 
@@ -63,6 +72,8 @@ O objetivo deste repositório é consolidar o aprendizado prático da disciplina
    cd Projeto-3-Perceptron
    # ou
    cd Projeto-4-Jogo-dos-Oito
+   # ou
+   cd Projeto-5-Algoritmos-Geneticos
    ```
 
 3. Siga as instruções no arquivo `README.md` de cada projeto para executar o código.
