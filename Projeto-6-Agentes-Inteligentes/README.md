@@ -70,4 +70,4 @@ Round 20: Price = 12
 
 ---
 
-Projeto desenvolvido por João Pedro Alves Carneiro Valadão para a disciplina Inteligência Artificial, Universidade Federal de Lavras.
+Projeto desenvolvido por João Pedro Alves Carneiro Valadão e Michel Alexandrino de Souza para a disciplina Inteligência Artificial, Universidade Federal de Lavras.
