@@ -1,6 +1,6 @@
 # Repositório de Projetos - GCC128: Inteligência Artificial
 
-Este repositório foi criado para armazenar os projetos desenvolvidos na disciplina **GCC128 - Inteligência Artificial**, oferecida pela **Universidade Federal de Lavras (UFLA)**. A disciplina aborda conceitos fundamentais de Inteligência Artificial, com foco em algoritmos de aprendizado de máquina, agrupamento, classificação, busca em espaços de estados, otimização com algoritmos evolutivos e outras técnicas relacionadas.
+Este repositório foi criado para armazenar os projetos desenvolvidos na disciplina **GCC128 - Inteligência Artificial**, oferecida pela **Universidade Federal de Lavras (UFLA)**. A disciplina aborda conceitos fundamentais de Inteligência Artificial, com foco em algoritmos de aprendizado de máquina, agrupamento, classificação, busca em espaços de estados, otimização com algoritmos evolutivos, sistemas multiagentes, além de outras técnicas relacionadas.
 
 ---
 
@@ -41,6 +41,13 @@ O repositório contém os seguintes projetos:
 - Não requer bibliotecas externas além da biblioteca padrão do Python.
 - [Leia mais sobre o Projeto 5](./Projeto-5-Algoritmos-Geneticos/README.md)
 
+### **6. Projeto 6 - Agentes Inteligentes: Simulação de Mercado de Jogos Digitais**
+- Implementação de uma simulação de mercado virtual utilizando agentes inteligentes com a biblioteca AutoGen.
+- Dois tipos de agentes: jogadores (que tomam decisões de compra, venda ou espera) e o mercado (que ajusta o preço conforme oferta e demanda).
+- Simulação de rodadas, com exibição detalhada das ações dos agentes, saldo, itens e preço do mercado.
+- Parâmetros ajustáveis para experimentação de diferentes cenários.
+- [Leia mais sobre o Projeto 6](./Projeto-6-Agentes-Inteligentes/README.md)
+
 ---
 
 ## **Objetivo**
@@ -52,6 +59,7 @@ O objetivo deste repositório é consolidar o aprendizado prático da disciplina
 - **Visualização**: Representação gráfica dos resultados para melhor interpretação.
 - **Busca e Resolução de Problemas**: Aplicação de algoritmos clássicos de busca para resolver o Jogo dos Oito, ilustrando conceitos de busca em espaços de estados e solução automática de problemas.
 - **Otimização com Algoritmos Evolutivos**: Utilização de Algoritmos Genéticos para resolver problemas de otimização, demonstrando conceitos de seleção, crossover, mutação e análise de desempenho ao longo das gerações.
+- **Sistemas Multiagentes e Simulação de Mercado**: Modelagem de agentes autônomos (jogadores e mercado) interagindo em um ambiente virtual, com tomada de decisão, adaptação e ajuste dinâmico de preços, utilizando a biblioteca AutoGen.
 
 ---
 
@@ -74,6 +82,8 @@ O objetivo deste repositório é consolidar o aprendizado prático da disciplina
    cd Projeto-4-Jogo-dos-Oito
    # ou
    cd Projeto-5-Algoritmos-Geneticos
+   # ou
+   cd Projeto-6-Agentes-Inteligentes
    ```
 
 3. Siga as instruções no arquivo `README.md` de cada projeto para executar o código.
@@ -88,6 +98,7 @@ Certifique-se de ter o Python 3.8 ou superior instalado, além das seguintes bib
 - `scikit-learn`
 - `matplotlib`
 - `seaborn`
+- `pyautogen`
 
 Para instalar as dependências, execute:
 ```bash
