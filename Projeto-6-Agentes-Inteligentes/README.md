@@ -79,7 +79,7 @@ Preço do mercado: 10
 
 ## 🔗 Link para o vídeo de explicação
 
-[]()
+[https://youtu.be/xMBQkTv5oes](https://youtu.be/xMBQkTv5oes)
 
 ---
 
