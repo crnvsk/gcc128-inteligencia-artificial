@@ -4,8 +4,10 @@ import random
 class PlayerAgent(autogen.Agent):
     def __init__(self, name, balance):
         super().__init__(name)
+        self.display_name = name
         self.balance = balance
         self.items = 0
+        
 
     def decide(self, price):
         if price < 12 and self.balance >= price:
@@ -49,7 +51,7 @@ if __name__ == "__main__":
                 player.balance += market.price
                 player.items -= 1
                 sells += 1
-            print(f"{player.name}: ação = {action}, saldo = {player.balance}, itens = {player.items}")
+            print(f"{player.display_name}: ação = {action}, saldo = {player.balance}, itens = {player.items}")
         market.adjust_price(buys, sells)
         print(f"Compras: {buys}, Vendas: {sells}")
         print(f"Preço do mercado: {market.price}")
