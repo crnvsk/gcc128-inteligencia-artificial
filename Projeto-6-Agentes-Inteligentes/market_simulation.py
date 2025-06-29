@@ -54,4 +54,4 @@ if __name__ == "__main__":
             print(f"{player.display_name}: ação = {action}, saldo = {player.balance}, itens = {player.items}")
         market.adjust_price(buys, sells)
         print(f"Compras: {buys}, Vendas: {sells}")
-        print(f"Preço do mercado: {market.price}")
+        print(f"Preço do mercado ajustado: {market.price}")
