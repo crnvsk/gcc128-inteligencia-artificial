@@ -31,6 +31,7 @@ Este projeto implementa uma **Simulação de Mercado Virtual** utilizando agente
 
 - Python 3.8 ou superior.
 - Biblioteca [pyautogen](https://pypi.org/project/pyautogen/):
+
   ```bash
   pip install pyautogen
   ```
@@ -39,10 +40,12 @@ Este projeto implementa uma **Simulação de Mercado Virtual** utilizando agente
 
 1. Clone o repositório ou copie o arquivo para sua máquina.
 2. Instale a dependência:
+
    ```bash
    pip install pyautogen
    ```
 3. Execute o arquivo principal:
+
    ```bash
    python market_simulation.py
    ```
@@ -51,11 +54,21 @@ Este projeto implementa uma **Simulação de Mercado Virtual** utilizando agente
 ## Exemplo de Saída
 
 ```
-Round 1: Price = 8
-Round 2: Price = 9
-Round 3: Price = 10
-...
-Round 20: Price = 12
+--- Round 1 ---
+Player0: ação = wait, saldo = 100, itens = 0
+Player1: ação = buy, saldo = 92, itens = 1
+Player2: ação = buy, saldo = 92, itens = 1
+Compras: 2, Vendas: 0
+Preço do mercado: 9
+
+--- Round 2 ---
+Player0: ação = buy, saldo = 83, itens = 1
+Player1: ação = wait, saldo = 92, itens = 1
+Player2: ação = wait, saldo = 92, itens = 1
+Compras: 1, Vendas: 0
+Preço do mercado: 10
+
+... (demais rodadas)
 ```
 
 ## Observações

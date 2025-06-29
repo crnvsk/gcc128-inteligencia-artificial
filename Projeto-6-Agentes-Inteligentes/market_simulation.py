@@ -38,6 +38,7 @@ if __name__ == "__main__":
 
     for round in range(20):
         buys = sells = 0
+        print(f"\n--- Round {round+1} ---")
         for player in players:
             action = player.decide(market.price)
             if action == 'buy':
@@ -48,5 +49,7 @@ if __name__ == "__main__":
                 player.balance += market.price
                 player.items -= 1
                 sells += 1
+            print(f"{player.name}: ação = {action}, saldo = {player.balance}, itens = {player.items}")
         market.adjust_price(buys, sells)
-        print(f'Round {round+1}: Price = {market.price}')
+        print(f"Compras: {buys}, Vendas: {sells}")
+        print(f"Preço do mercado: {market.price}")
