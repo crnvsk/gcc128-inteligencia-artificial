@@ -29,8 +29,8 @@ Este projeto implementa o clássico **Jogo dos Oito (8-Puzzle)**, resolvido por 
 
 ## Requisitos
 
-Certifique-se de que o Python está instalado (recomendado Python 3.8+).  
-Não são necessárias bibliotecas externas além da biblioteca padrão.
+- Certifique-se de que o Python está instalado (recomendado Python 3.8+).  
+- Não são necessárias bibliotecas externas além da biblioteca padrão.
 
 ## Como Executar
 
